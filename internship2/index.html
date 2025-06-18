@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Starter Landing Page</title>
+  <style>
+    :root {
+      --primary: #3498db;
+      --dark: #2c3e50;
+      --light: #ecf0f1;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: var(--primary);
+      padding: 1.5rem;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+    }
+
+    .nav-bar {
+      background: #2980b9;
+      padding: 0.75rem 0;
+      text-align: center;
+    }
+
+    .nav-bar a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 500;
+    }
+
+    .hero-section {
+      background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+      height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    .hero-section h2 {
+      font-size: 3rem;
+      background: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+    }
+
+    .main-content {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      padding: 1.5rem;
+      margin: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      flex: 1 1 300px;
+    }
+
+    .card h3 {
+      margin-bottom: 0.75rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: var(--primary);
+      color: white;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero-section h2 {
+        font-size: 2rem;
+        padding: 0.5rem 1rem;
+      }
+      .main-content {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My First Landing Page</h1>
+  </header>
+
+  <div class="nav-bar">
+    <a href="#">Home</a>
+    <a href="#">Features</a>
+    <a href="#">Team</a>
+    <a href="#">Reach Us</a>
+  </div>
+
+  <section class="hero-section">
+    <h2>Build Something Great</h2>
+  </section>
+
+  <section class="main-content">
+    <div class="card">
+      <h3>Who We Are</h3>
+      <p>This is a simple landing page to practice front-end basics. Customize it with your style and content.</p>
+    </div>
+    <div class="card">
+      <h3>What We Offer</h3>
+      <p>Share details about your project, service, or idea. Keep it brief and engaging for your visitors.</p>
+    </div>
+    <div class="card">
+      <h3>Let's Connect</h3>
+      <p>Provide ways people can contact you or link to your social media profiles and email.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 YourName. Designed with passion.</p>
+  </footer>
+
+</body>
+</html>
